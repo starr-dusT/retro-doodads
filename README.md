@@ -60,7 +60,11 @@ xz -dk <combined archive>
         - Open GB game
         - `Quick Menu -> Settings -> Video -> Aspect Ratio -> Core provided`
         - `Quick Menu -> Overrides -> Save Content Directory Overrides`
-        - `Quick Menu -> Core Options -> Manage Core Options -> GB Colorization -> Internal` 
+        - `Quick Menu -> Core Options -> Manage Core Options -> GB Colorization -> Internal`
+    - Arcade
+        - Open Arcade game
+        - `Settings -> Saving -> Auto Load State -> OFF`
+        - `Quick Menu -> Overrides -> Save Content Directory Overrides`
     
 12. Download roms and bios files with Grout
 
