@@ -29,6 +29,8 @@ xz -dk <combined archive>
     - `ports`
     - `launchimages`
 
+6. Copy `root` files to relevant locations on `root` parition on sd card.
+
 7. Put SD card back into device and boot
 
 8. Connect console to Wifi and perform initial setup of Grout. Create token for console [here](https://romm.tstarr.us/client-api-tokens). When prompted create directories for relevant systems. Make sure to register device for save sync in `Settings -> Save Sync`.
@@ -49,6 +51,8 @@ xz -dk <combined archive>
     - `UI Settings -> Game Loading Image Mode -> None`
     - `UI Settings -> Start On System -> Favorites`
     - `ArkOS4Clone Settings -> Power LED -> Above 60% Blue`
+    - `ArkOS4Clone Settings -> Tools -> ZRam Settings -> ZRam Enable`
+    - `ArkOS4Clone Settings -> Tools -> ZRam Settings -> ZRam Auto Start`
     - `Advanced Settings -> Timezone -> America/Los_Angeles`
 
 11. Set per system overrides:
@@ -73,4 +77,7 @@ xz -dk <combined archive>
     - `Scraper -> Password`
     - `Scraper -> Scrape Now -> Start`
         
-14. Enjoy!
+14. Disable Wifi when not needed with:
+    - `Options -> Wifi-Toggle -> Disable Wifi and Detect Usb Media`
+
+15. Enjoy!
