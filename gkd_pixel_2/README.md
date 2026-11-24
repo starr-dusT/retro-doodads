@@ -31,6 +31,7 @@
     - `UI Settings -> Show Video Previews`
     - `UI Settings -> Show Favorites On Top`
     - `Game Collection Settings -> Start on System -> Favorites`
+    - `Game Collection Settings -> Systems Displayed -> Disable Tools and Music`
     - `System Settings -> Timezone -> America/Los_Angeles`
     
 11. Download roms and bios files with Grout
