@@ -1,0 +1,83 @@
+# dArkOS Install
+
+Instructions and configs for dArkOS or ArkOS install on my devices. Primarily the A10mini V4.
+
+## Install
+
+1. Download latest dArkOS4Clone/ArkOSClone release from [here](https://github.com/lcdyk0517/arkos4clone/releases)
+
+2. Extract multi-part archive to the image file with the following commands:
+```
+7z x <first archive file>
+xz -dk <combined archive>   
+```
+
+3. Flash dArkOS4Clone/ArkOSClone image to sd card with Gnome Disks or similar
+
+4. Copy the following to the root of the BOOT partition:
+    - Contents of `consoles/<console>`
+    - Kernel from `consoles/kernel/arkos4clone_fix`
+    - Logo file from `consoles/logo/<resolution>` (540P for A10mini V4)
+    
+4. Put SD card into handheld and perform initial installation. Then remove and put back into computer
+
+5. Download latest Grout release for dArkOS from [here](https://github.com/rommapp/grout/releases). Extract the contents to `EASYROMS/ports`. Copy the `input_mappings.json` to the `Grout` folder to fix mappings for Grout setup.
+
+6. Copy over theme files from `files/themes` to `EASYROMS/themes` and remove all folders from `EASYROMS` except for:
+    - `tools`
+    - `themes`
+    - `ports`
+    - `launchimages`
+
+6. Copy `root` files to relevant locations on `root` parition on sd card.
+
+7. Put SD card back into device and boot
+
+8. Connect console to Wifi and perform initial setup of Grout. Create token for console [here](https://romm.tstarr.us/client-api-tokens). When prompted create directories for relevant systems. Make sure to register device for save sync in `Settings -> Save Sync`.
+
+9. Open Retroarch and settings: 
+    - `Settings -> Saving -> Sort Saves into Folders by Core Name -> OFF` 
+    - `Settings -> Saving -> Save State Thumbnails -> ON`
+    - `Settings -> Saving -> Increment Save State Index Automatically -> ON`
+    - `Settings -> Saving -> Auto Save State -> ON`
+    - `Settings -> Saving -> Auto Load State -> ON`
+    - `Settings -> User Interface -> Show Advanced Settings -> On`
+    - `Settings -> User Interface -> Menu Item Visibility -> Quick Menu -> Show Save Core Overrides -> On`
+    - `Settings -> User Interface -> Menu Item Visibility -> Quick Menu -> Show Save Game Overrides -> On`
+    - Save with `ArkOS -> Configuration File -> Save Current Configuration`
+
+10. Set misc settings:
+    - `UI Settings -> Select desired theme`
+    - `UI Settings -> Game Loading Image Mode -> None`
+    - `UI Settings -> Start On System -> Favorites`
+    - `ArkOS4Clone Settings -> Power LED -> Above 60% Blue`
+    - `ArkOS4Clone Settings -> Tools -> ZRam Settings -> ZRam Enable`
+    - `ArkOS4Clone Settings -> Tools -> ZRam Settings -> ZRam Auto Start`
+    - `Advanced Settings -> Timezone -> America/Los_Angeles`
+
+11. Set per system overrides:
+    - GBA
+        - Open GBA game
+        - `Quick Menu -> Settings -> Video -> Aspect Ratio -> Core provided`
+        - `Quick Menu -> Overrides -> Save Content Directory Overrides`
+    - GB
+        - Open GB game
+        - `Quick Menu -> Settings -> Video -> Aspect Ratio -> Core provided`
+        - `Quick Menu -> Overrides -> Save Content Directory Overrides`
+        - `Quick Menu -> Core Options -> Manage Core Options -> GB Colorization -> Internal`
+    - Arcade
+        - Open Arcade game
+        - `Settings -> Saving -> Auto Load State -> OFF`
+        - `Quick Menu -> Overrides -> Save Content Directory Overrides`
+    
+12. Download roms and bios files with Grout
+
+13. Scrape Artwork with Scraper:
+    - `Scraper -> Username`
+    - `Scraper -> Password`
+    - `Scraper -> Scrape Now -> Start`
+        
+14. Disable Wifi when not needed with:
+    - `Options -> Wifi-Toggle -> Disable Wifi and Detect Usb Media`
+
+15. Enjoy!
