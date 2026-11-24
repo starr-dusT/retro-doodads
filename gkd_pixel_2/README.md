@@ -16,7 +16,7 @@
 
 6. Download latest Grout release for ROCKNIX [here](https://github.com/rommapp/grout/releases). Extract the contents to `Roms/ports`
 
-7. Copy over theme files from `files/themes` to `Roms/themes` 
+7. Copy over theme files from `files/themes` and `logo.png`.
 
 8. Reboot the device and plug in an external USB Wifi dongle:
     - `Settings -> Network Settings -> USB Gadget Function -> Network`
@@ -33,6 +33,7 @@
     - `Game Collection Settings -> Start on System -> Favorites`
     - `Game Collection Settings -> Systems Displayed -> Disable Tools and Music`
     - `System Settings -> Timezone -> America/Los_Angeles`
+    - `Network Settings -> Hostname -> osprey`
     
 11. Download roms and bios files with Grout
 
